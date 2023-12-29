@@ -8,17 +8,18 @@ import AppNavigation from "./src/navagation/AppNavigation";
 import {PaperProvider} from "react-native-paper";
 import {lightTheme} from "./src/hook/theme/useAppTheme";
 import AuthProvider from "./src/helper/AuthProvider";
-
+import {useAppTheme} from './src/hook/theme/useAppTheme'
 export default function App() {
+  const {colors} = useAppTheme()
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <PaperProvider theme={lightTheme}>
           <NavigationContainer>
             <AppNavigation />
+            <AuthProvider />
           </NavigationContainer>
-          <StatusBar />
-          <AuthProvider />
+          <StatusBar backgroundColor={colors.background} />
         </PaperProvider>
       </PersistGate>
     </Provider>

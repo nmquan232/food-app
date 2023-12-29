@@ -30,7 +30,7 @@ export const lightColors = {
   background: '#FFFFFF',
   background2: '#F6F6F6',
   background3: '#F9F9F9',
-  onBackground: '#292C38',
+  onBackground: '#EDEDED',
   title: '#121212',
   label: '#616161',
   text: '#121212',

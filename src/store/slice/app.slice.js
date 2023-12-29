@@ -1,7 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 const initState = {
-  isSignIned: false
+  isSignedIn: false
 }
 
 export const appSlice = createSlice({
@@ -14,5 +14,6 @@ export const appSlice = createSlice({
 
   }
 })
+
 
 
