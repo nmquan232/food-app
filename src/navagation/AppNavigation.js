@@ -5,7 +5,7 @@ import Auth from "../screen/Auth";
 const Stack = createStackNavigator()
 const AppNavigation = () => {
   return (
-    <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Navigator>
       <Stack.Screen name='BottomTabNavigation' component={BottomTabNavigation} />
       <Stack.Screen name='Auth' component={Auth} />
     </Stack.Navigator>

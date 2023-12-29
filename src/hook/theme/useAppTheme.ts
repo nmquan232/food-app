@@ -34,7 +34,8 @@ export type CustomColors = {
   neutral: Record<"0" | "5" | "10" | "20" | "30" | "40" | "50" | "60" | "70", string>,
   delete: string,
   blue: string,
-  red: string
+  red: string,
+  white: string
 };
 export type AppThemeColors = MD3Colors & CustomColors;
 export type AppTheme = MD3Theme & {

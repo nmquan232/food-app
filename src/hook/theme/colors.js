@@ -55,7 +55,8 @@ export const lightColors = {
   titleInactive: NEUTRAL_COLORS_LIGHT[30],
   delete: '#F34E4E',
   blue: '#0084FF',
-  red: '#FA4A0C'
+  red: '#FA4A0C',
+  white: '#FFFFFF'
 };
 
 export const darkColors = {
@@ -94,5 +95,6 @@ export const darkColors = {
   titleInactive: NEUTRAL_COLORS_LIGHT[30],
   delete: '#F34E4E',
   blue: '#0084FF',
-  red: '#FA4A0C'
+  red: '#FA4A0C',
+  white: '#FFFFFF'
 };
