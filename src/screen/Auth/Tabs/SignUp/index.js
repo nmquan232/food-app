@@ -13,7 +13,7 @@ const SignUp = () => {
         <AppInput value={text} label='Email' customStyles={{marginHorizontal: 24}} onChangeText={setText} />
         <AppInput value={text} label='Password' customStyles={{marginHorizontal: 24}} onChangeText={setText} />
       </View>
-      <BottomButton />
+      <BottomButton title='Sign Up' />
     </View>
   )
 }
