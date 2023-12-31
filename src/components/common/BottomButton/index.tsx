@@ -9,7 +9,10 @@ interface BottomButtonProps extends TouchableOpacityProps {
 const BottomButton : React.FC<BottomButtonProps> = (props) => {
   const {colors} = useAppTheme()
   return (
-    <TouchableOpacity style={[props.customStyle, {backgroundColor: colors.primary, marginHorizontal: 24, padding: 16, borderRadius: 18, alignItems: 'center', marginBottom: 20}]}>
+    <TouchableOpacity
+      style={[props.customStyle, {backgroundColor: colors.primary, marginHorizontal: 24, padding: 16, borderRadius: 18, alignItems: 'center', marginBottom: 20}]}
+      {...props}
+    >
       <Text style={{color: colors.onPrimary}}>{props.title}</Text>
     </TouchableOpacity>
   )

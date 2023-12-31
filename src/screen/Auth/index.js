@@ -1,11 +1,11 @@
 import {View, Text, SafeAreaView, Image, TouchableOpacity} from "react-native";
-import {useAppTheme} from "../../hook/theme/useAppTheme";
-import {width, height} from "../../constant/constants";
 // import AuthTabs from "../../navagation/AuthTabs";
-import SignIn from "./Tabs/SignIn";
-import SignUp from "./Tabs/SignUp";
 import {createMaterialTopTabNavigator} from "@react-navigation/material-top-tabs";
 import TabBar from "./TabBar";
+import SignUp from "@/screen/Auth/Tabs/SignUp";
+import SignIn from "@/screen/Auth/Tabs/SignIn";
+import {useAppTheme} from "@/hook/theme/useAppTheme";
+import {width, height} from "@/constant/constants";
 
 const Tab = createMaterialTopTabNavigator()
 const Auth = () => {
@@ -14,9 +14,9 @@ const Auth = () => {
     <View style={{flex: 1}}>
       <View style={{backgroundColor: colors.background, alignItems: 'center'}}>
         <View>
-          <Image source={require('../../../assets/logo.png')} resizeMode={'contain'}/>
+          {/*<Image source={require('../../../assets/logo.png')} resizeMode={'contain'}/>*/}
           <Image
-            source={require('../../../assets/Vector.png')}
+            source={require('../../assets/image/Vector.png')}
             resizeMode={'contain'}
             style={{position: 'absolute', right: -15, bottom: 0}}/>
         </View>

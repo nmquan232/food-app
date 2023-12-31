@@ -1,19 +1,33 @@
 import {View, Text, TouchableOpacity} from "react-native";
-import AppInput from "../../../../components/common/AppInput";
 import {useState} from "react";
-import {useAppTheme} from "../../../../hook/theme/useAppTheme";
-import BottomButton from "../../../../components/common/BottomButton";
+import AppInput from "@/components/common/AppInput";
+import BottomButton from "@/components/common/BottomButton";
+import {useAppTheme} from "@/hook/theme/useAppTheme";
 
-const SignIn = () => {
-  const [text, setText] = useState('')
+const SignIn = ({navigation}) => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const {colors} = useAppTheme();
   return (
     <View style={{flex: 1, marginTop: 48}}>
       <View style={{flex: 1, gap: 16}}>
-        <AppInput value={text} label='Email' customStyles={{marginHorizontal: 24}} onChangeText={setText} />
-        <AppInput value={text} label='Password' customStyles={{marginHorizontal: 24}} onChangeText={setText} />
+        <AppInput
+          value={email}
+          label='Email'
+          placeholder={'Enter your email...'}
+          customStyles={{marginHorizontal: 24}}
+          onChangeText={setEmail} />
+        <AppInput
+          secureTextEntry={true}
+          value={password} label='Password'
+          placeholder={'Enter your password...'}
+          customStyles={{marginHorizontal: 24}}
+          onChangeText={setPassword} />
       </View>
-      <BottomButton title='Login' />
+      <BottomButton
+        title='Login'
+        onPress={() => navigation.navigate('Home')}
+      />
     </View>
   )
 }

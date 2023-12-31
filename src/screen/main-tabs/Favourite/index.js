@@ -1,10 +1,15 @@
-import {View, Text} from "react-native";
+import SafeScreen from "@/components/Layout/SafeScreen";
+import AppHeader from "@/components/common/AppHeader";
+import {useAppTheme} from "@/hook/theme/useAppTheme";
+import EmptyScreen from "@/components/common/EmptyScreen";
 
 const Favourite = () => {
+  const {colors} = useAppTheme()
   return (
-    <View>
-      <Text>Favourite</Text>
-    </View>
+    <SafeScreen>
+      <AppHeader title={'History'} />
+      <EmptyScreen />
+    </SafeScreen>
   )
 }
 export default Favourite

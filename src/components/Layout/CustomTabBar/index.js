@@ -1,10 +1,10 @@
 import {TouchableOpacity, View, Text, Keyboard} from "react-native";
 import {styles} from "./styles";
 import {useEffect, useState} from 'react'
-import {Route} from "@react-navigation/native";
-import {Ionicons, Feather} from '@expo/vector-icons';
-import {useAppTheme} from "../../../hook/theme/useAppTheme";
-
+import {useAppTheme} from "@/hook/theme/useAppTheme";
+import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
+import {faHeart, faHome, faUser} from "@fortawesome/free-solid-svg-icons";
+import * as RIcon from "@fortawesome/free-regular-svg-icons";
 const CustomTabBar = ({state, descriptors, navigation}) => {
 
   const [visible, setVisible] = useState(true);
@@ -58,16 +58,16 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
         };
 
         const color = isFocused ? colors.red : colors.grey2;
-        let icon = "home";
+        let icon = faHome;
         switch (route.name) {
           case 'Home':
-            icon = "home";
+            icon = faHome;
             break;
           case 'Favourite':
-            icon = 'heart';
+            icon = isFocused ? faHeart : RIcon.faHeart;
             break;
           case 'User':
-            icon = 'user';
+            icon = isFocused ? faUser : RIcon.faUser;
             break;
         }
         return (
@@ -81,19 +81,7 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
             onPress={onPress}
             style={styles.itemTab}>
             <View>
-              {icon !== 'user' ?
-                <Ionicons
-                  name={icon}
-                  size={20}
-                  color={color}
-                />
-                :
-                <Feather
-                  name={icon}
-                  size={20}
-                  color={color}
-                />
-              }
+              <FontAwesomeIcon icon={icon} color={color} size={20}/>
             </View>
           </TouchableOpacity>
         );

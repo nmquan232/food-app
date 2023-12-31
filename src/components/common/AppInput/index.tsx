@@ -31,9 +31,9 @@ const AppInput: React.FC<AppInput> = (props) => {
     <View style={[props.customStyles]}>
       {/*// @ts-ignore*/}
       <TextInput
+        editable={!props.onPress}
         mode={"outlined"}
         label={props.label}
-        placeholder={'Email'}
         placeholderTextColor={colors.label}
         activeOutlineColor={colors.text}
         style={[

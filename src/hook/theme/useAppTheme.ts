@@ -35,7 +35,8 @@ export type CustomColors = {
   delete: string,
   blue: string,
   red: string,
-  white: string
+  white: string,
+  bank: string
 };
 export type AppThemeColors = MD3Colors & CustomColors;
 export type AppTheme = MD3Theme & {

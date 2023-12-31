@@ -35,7 +35,7 @@ export const lightColors = {
   label: '#616161',
   text: '#121212',
   danger: '#E44F0B',
-  grey1: '#2C2C2E',
+  grey1: '#ADADAF',
   grey2: '#ADADAF',
   grey3: '#dedee3',
   bubble: '#007BFF10',
@@ -47,16 +47,11 @@ export const lightColors = {
   border3: '#ECECEC',
   underlayColor: '#09264210',
   yellow: '#FFB100',
-  primaryRemake: PRIMARY_COLORS_LIGHT,
-  neutral: NEUTRAL_COLORS_LIGHT,
-  inputSearchBackground: NEUTRAL_COLORS_LIGHT[10],
-  inputSearchPlaceholder: NEUTRAL_COLORS_LIGHT[30],
-  primaryInactive: PRIMARY_COLORS_LIGHT[5],
-  titleInactive: NEUTRAL_COLORS_LIGHT[30],
   delete: '#F34E4E',
-  blue: '#0084FF',
+  blue: '#0038FF',
   red: '#FA4A0C',
-  white: '#FFFFFF'
+  white: '#FFFFFF',
+  bank: '#EB4796'
 };
 
 export const darkColors = {
@@ -75,7 +70,7 @@ export const darkColors = {
   label: '#616161',
   text: '#A1A2A9',
   danger: '#E44F0B',
-  grey1: '#2C2C2E',
+  grey1: '#ADADAF',
   grey2: '#8E8E93',
   grey3: '#dedee3',
   bubble: '#00000020',
@@ -87,14 +82,9 @@ export const darkColors = {
   border3: '#ECECEC',
   underlayColor: '#09264210',
   yellow: '#FFB100',
-  primaryRemake: PRIMARY_COLORS_LIGHT,
-  neutral: NEUTRAL_COLORS_LIGHT,
-  inputSearchBackground: NEUTRAL_COLORS_LIGHT[10],
-  inputSearchPlaceholder: NEUTRAL_COLORS_LIGHT[30],
-  primaryInactive: PRIMARY_COLORS_LIGHT[5],
-  titleInactive: NEUTRAL_COLORS_LIGHT[30],
   delete: '#F34E4E',
-  blue: '#0084FF',
+  blue: '#0038FF',
   red: '#FA4A0C',
-  white: '#FFFFFF'
+  white: '#FFFFFF',
+  bank: '#EB4796'
 };
