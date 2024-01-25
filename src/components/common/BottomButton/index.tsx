@@ -1,6 +1,6 @@
 import React from 'react'
 import {StyleProp, Text, TouchableOpacity, TouchableOpacityProps, View, ViewStyle} from "react-native";
-import {useAppTheme} from "../../../hook/theme/useAppTheme";
+import {useAppTheme} from "@/hook/theme/useAppTheme";
 interface BottomButtonProps extends TouchableOpacityProps {
   title: string
   customStyle?: StyleProp<ViewStyle>

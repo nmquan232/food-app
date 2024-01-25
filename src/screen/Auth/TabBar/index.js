@@ -1,5 +1,5 @@
 import { Animated, View, TouchableOpacity } from 'react-native';
-import {useAppTheme} from "../../../hook/theme/useAppTheme";
+import {useAppTheme} from "@/hook/theme/useAppTheme";
 
 function TabBar({ state, descriptors, navigation, position }) {
   const {colors} = useAppTheme()

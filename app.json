@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tuaans17.foodapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -32,7 +33,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "48eadb1d-e70e-4673-8a1f-8981745d836f"
+        "projectId": "9ef41898-5894-4799-87e7-7def759c623d"
       }
     }
   }
